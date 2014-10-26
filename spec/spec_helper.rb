@@ -3,4 +3,4 @@ CodeClimate::TestReporter.start
 
 require "pry"
 require "rspec"
-require "blankgem"
+require "rack/content_length_setter"

@@ -3,16 +3,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "blankgem/version"
+require "rack/content_length_setter/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "blankgem"
-  spec.version       = Blankgem::VERSION
+  spec.name          = "rack-content_length_setter"
+  spec.version       = Rack::ContentLengthSetter::VERSION
   spec.authors       = ["Kurtis Rainbolt-Greene"]
   spec.email         = ["me@kurtisrainboltgreene.name"]
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.summary       = %q{Middleware that autowrites Content-Length to responses}
   spec.description   = spec.summary
-  spec.homepage      = "http://krainboltgreene.github.io/blankgem"
+  spec.homepage      = "http://krainboltgreene.github.io/rack-content_length_setter"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"]
